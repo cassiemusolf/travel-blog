@@ -1,18 +1,18 @@
 
-<h2 class="title">{{travel.title}}</h2> <br>
-<h3 class="author">by {{travel.author}}</h3>
 
-<img class="image" src={{travel.image}} alt="travel image">
-<h1 class="country">{{travel.country}}</h1>
-<br>
-<p class="summary">
-  {{travel.summary}}
-</p>
+ <div class="each-tile">
+   <h2 class="title">{{travel.title}}</h2> <br>
+   <h3 class="author">by {{travel.author}}</h3>
 
-<p> {{#link-to 'travel' travel.id}}
-  read more...
-  {{/link-to}}
-</p>
+   <img class="image" src={{travel.image}} alt="travel image">
+   <h1 class="country">{{travel.country}}</h1>
+   <br>
+   <p class="summary">
+     {{travel.summary}}
+   </p>
 
-{{update-travel travel=travel update="update"}}
-  <button {{action 'delete' travel}}>Delete Post</button>
+   <p class="read-more"> {{#link-to 'travel' travel.id}}
+     Read More...
+     {{/link-to}}
+   </p>
+ </div>
