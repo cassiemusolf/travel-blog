@@ -1,0 +1,14 @@
+
+
+<h1>Welcome to our travel blog</h1>
+
+<h2>Talk about your travels and experiences!</h2>
+
+<ul>
+  {{#each model as |travel|}}
+    {{travel-tile travel=travel}}
+  {{/each}}
+</ul>
+
+{{#link-to 'about'}}About{{/link-to}}
+{{#link-to 'contact'}}Click here to contact us.{{/link-to}}
