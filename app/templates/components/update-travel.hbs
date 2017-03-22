@@ -1,0 +1,35 @@
+{{#if updateTravelForm}}
+<h4>Update {{travel.title}} by {{travel.author}}</h4>
+<div>
+   <form>
+     <div class="form-group">
+       <label for="title">Title</label>
+       {{input value=title id="title"}}
+     </div>
+
+     <div class="form-group">
+       <label for="author">Author</label>
+       {{input value=author id="author"}}
+     </div>
+
+     <div class="form-group">
+       <label for="country">Country</label>
+       {{input value=country id="country"}}
+     </div>
+
+     <div class="form-group">
+       <label for="summary">Summary of blog</label>
+       {{input value=summary id="summary"}}
+     </div>
+
+     <div class="form-group">
+       <label for="image">Image URL</label>
+       {{input value=image id="image"}}
+     </div>
+
+     <button {{action 'update' travel}}>Save</button>
+   </form>
+ </div>
+{{else}}
+<button {{action 'updateTravelForm'}}>Update this blog</button>
+{{/if}}
