@@ -1,0 +1,18 @@
+
+<div class="col-sm-10">
+
+<h1>{{travel.title}} </h1>
+<h3>by {{travel.author}}</h3>
+<hr>
+{{travel.country}}
+<hr>
+
+<img src={{travel.image}} alt="Travel image">
+</div>
+
+<div class="col-sm-1"></div>
+
+<div class="col-sm-1">
+
+<button {{action 'delete' travel}}>Delete</button>
+</div>

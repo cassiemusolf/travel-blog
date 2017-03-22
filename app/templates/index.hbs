@@ -4,13 +4,33 @@
 
 <h2>Talk about your travels and experiences!</h2>
 
-<ul>
-  {{#each model as |travel|}}
-    {{travel-tile travel=travel update="update" destroyTravel="destroyTravel"}}
-  {{/each}}
-</ul>
+<div class="row">
+  <div class="col-sm-8">
+    <div class="container">
 
-{{new-travel saveTravel="saveTravel"}}
+    <ul>
+      {{#each model as |travel|}}
+      {{travel-tile travel=travel}}
+      {{/each}}
+    </ul>
+  </div>
 
+</div>
+</div>
+
+<div class="row">
+  <div class="col-sm-4">
+    <div class="container">
+
+      {{new-travel saveTravel="saveTravel"}}
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- put this in the APLLICATION file to be on all pages -->
 {{#link-to 'about'}}About{{/link-to}}
 {{#link-to 'contact'}}Click here to contact us.{{/link-to}}

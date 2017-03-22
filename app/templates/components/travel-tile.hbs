@@ -1,13 +1,18 @@
-<!-- <img class="blog-image" src="{{travel.image}}" alt="Travel Image" /> -->
-<br>
-{{travel.title}} by {{travel.author}}
-{{travel.country}}
-{{travel.summary}}
 
-{{#if isImageShowing }}
-  <p><img src={{travel.image}} alt={{travel.type}} {{action 'imageHide'}}></p>
-{{else}}
-  <button {{action 'imageShow'}}>Show image</button>
-{{/if}}
+<h2 class="title">{{travel.title}}</h2> <br>
+<h3 class="author">by {{travel.author}}</h3>
+
+<img class="image" src={{travel.image}} alt="travel image">
+<h1 class="country">{{travel.country}}</h1>
+<br>
+<p class="summary">
+  {{travel.summary}}
+</p>
+
+<p> {{#link-to 'travel' travel.id}}
+  read more...
+  {{/link-to}}
+</p>
+
 {{update-travel travel=travel update="update"}}
   <button {{action 'delete' travel}}>Delete Post</button>
