@@ -1,4 +1,12 @@
-<img class="blog-image" src="{{travel.image}}" alt="Travel Image" />
+<!-- <img class="blog-image" src="{{travel.image}}" alt="Travel Image" /> -->
 <br>
-{{travel.title}} by {{travel.author}} {{travel.country}}
+{{travel.title}} by {{travel.author}}
+{{travel.country}}
 {{travel.summary}}
+
+{{#if isImageShowing }}
+  <p><img src={{travel.image}} alt={{travel.type}} {{action 'imageHide'}}></p>
+{{else}}
+  <button {{action 'imageShow'}}>Show image</button>
+{{/if}}
+  <button {{action 'delete' travel}}>Delete Post</button>

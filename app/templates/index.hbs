@@ -6,9 +6,11 @@
 
 <ul>
   {{#each model as |travel|}}
-    {{travel-tile travel=travel}}
+    {{travel-tile travel=travel destroyTravel="destroyTravel"}}
   {{/each}}
 </ul>
+
+{{new-travel saveTravel="saveTravel"}}
 
 {{#link-to 'about'}}About{{/link-to}}
 {{#link-to 'contact'}}Click here to contact us.{{/link-to}}
