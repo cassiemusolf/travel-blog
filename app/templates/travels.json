@@ -3,20 +3,23 @@
   "title": "Rafting Adventure",
   "country": "Fiji",
   "image": "https://s3.amazonaws.com/fathom_media/cache/c7/a5/c7a5ece97078e394379c9648067e6ac5.jpg",
-  "summary": "The most amazing scenery and rapids!"
+  "summary": "The most amazing scenery and rapids!",
+  "category": "Adventure"
   },
   {
     "author": "Veruca Salt",
     "title": "Salt Salt Salt",
     "country": "Peru",
     "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
-    "summary": "This is salty stuff"
+    "summary": "This is salty stuff",
+    "category": "Food"
   },
     {
       "author": "Precious V",
       "title": "Gold Mining",
       "country": "Iceland",
       "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
-      "summary": "I am rich BEAAAAOONCAY!"
+      "summary": "I am rich BEAAAAOONCAY!",
+      "category": "Adventure"
   }]
 }

@@ -2,8 +2,12 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model () {
-    return this.store.findAll('travel');
-  },
+    return Ember.RSVP.hash({
+    all: this.store.findAll('travel'),
+    travel: this.store.query('travel', {limitToLast:3}),
+
+  });
+},
 
   actions: {
     saveTravel(params) {
@@ -13,3 +17,4 @@ export default Ember.Route.extend({
     }
   }
 });
+// console.log(this.model());
