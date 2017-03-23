@@ -3,9 +3,9 @@ import Ember from 'ember';
 export default Ember.Route.extend({
   model () {
     return Ember.RSVP.hash({
-    all: this.store.findAll('travel'),
-    travel: this.store.query('travel', {limitToLast:3}),
-
+    travel: this.store.findAll('travel'),
+    comments: this.store.findAll('comment')
+    // travel: this.store.query('travel', {limitToLast:3})
   });
 },
 
@@ -13,6 +13,11 @@ export default Ember.Route.extend({
     saveTravel(params) {
       var newTravel = this.store.createRecord('travel', params);
       newTravel.save();
+      this.transitionTo('index');
+    },
+    saveComment(params) {
+      var newComment = this.store.createRecord('comment', params);
+      newComment.save();
       this.transitionTo('index');
     }
   }

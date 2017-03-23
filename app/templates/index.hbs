@@ -28,3 +28,13 @@
   <h1>TEST TEST - </h1>
   {{new-travel saveTravel="saveTravel"}}
 </div>
+
+<h3>all comments</h3>
+
+<ul>
+  {{#each model.comments as |comment|}}
+  <li>{{comment.author}} - {{comment.rating}} - {{comment.comment}}</li>
+  {{/each}}
+</ul>
+
+{{new-comment saveComment="saveComment"}}
