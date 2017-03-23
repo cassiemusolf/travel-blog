@@ -6,7 +6,7 @@ export default Ember.Component.extend({
     updateTravelForm() {
       this.set('updateTravelForm', true);
     },
-    update(travel) {
+    updateTravel(travel) {
       var params = {
         title: this.get('title'),
         author: this.get('author'),
@@ -15,7 +15,7 @@ export default Ember.Component.extend({
         image: this.get('image'),
       };
       this.set('updateTravelForm', false);
-      this.sendAction('update', travel, params);
+      this.sendAction('updateTravel', travel, params);
     }
-  }  
+  }
 });

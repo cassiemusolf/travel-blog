@@ -6,13 +6,22 @@ export default Ember.Route.extend({
   },
 
   actions: {
-    update(travel, params) {
+    updateTravel(travel, params) {
       Object.keys(params).forEach(function(key) {
         if(params[key]!==undefined) {
           travel.set(key,params[key]);
         }
       });
       travel.save();
+      this.transitionTo('travel');
+    },
+    updateComment(comment, params) {
+      Object.keys(params).forEach(function(key) {
+        if(params[key]!==undefined) {
+          comment.set(key,params[key]);
+        }
+      });
+      comment.save();
       this.transitionTo('travel');
     },
     saveComment(params) {
@@ -27,11 +36,11 @@ export default Ember.Route.extend({
     destroyTravel(travel) {
       var comment_deletions = travel.get('comments').map(function(comment) {
         return comment.destroyRecord();
-    });
-    Ember.RSVP.all(comment_deletions).then(function() {
-      return travel.destroyRecord();
-    });
-    this.transitionTo('index');
+      });
+      Ember.RSVP.all(comment_deletions).then(function() {
+        return travel.destroyRecord();
+      });
+      this.transitionTo('index');
     },
     destroyComment(comment) {
       comment.destroyRecord();
