@@ -1,11 +1,23 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  updateCommentForm: false,
   actions: {
-    update(comment, params) {
-      this.sendAction('update', comment, params);
+    updateCommentForm() {
+      this.set('updateCommentForm', true);
     },
-    delete (comment) {
+    updateComment(comment) {
+      var params = {
+        author: this.get('author'),
+        rating: this.get('rating'),
+        body: this.get('body')
+      };
+      console.log(params);
+      this.set('updateCommentForm', false);
+      debugger;
+      this.sendAction('updateComment', comment, params);
+    },
+    delete(comment) {
       if (confirm('Are you sure you want to delete?')) {
         this.sendAction('destroyComment', comment);
       }

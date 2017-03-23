@@ -7,6 +7,17 @@ export default Ember.Component.extend({
         this.sendAction('destroyTravel', travel);
       }
     },
+    updateComment(comment) {
+      var params = {
+        author: this.get('author'),
+        rating: this.get('rating'),
+        body: this.get('body')
+      };
+      console.log(params);
+      this.set('updateCommentForm', false);
+      debugger;
+      this.sendAction('updateComment', comment, params);
+    },
     destroyComment(comment) {
       this.sendAction('destroyComment', comment);
     }

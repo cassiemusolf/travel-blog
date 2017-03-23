@@ -1,4 +1,26 @@
-<li>{{comment.author}} - {{comment.comment}} - {{comment.rating}}</li>
+<li>{{comment.author}} - {{comment.body}} - {{comment.rating}}</li>
+{{#if updateCommentForm}}
+<h1>Update {{comment.author}}'s Comment</h1>
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="author">Author</label>
+        {{input value=comment.author id="author"}}
+      </div>
+      <div class="form-group">
+        <label for="rating">Rating</label>
+        {{input value=comment.rating id="rating"}}
+      </div>
+      <div class="form-group">
+        <label for="body">Body</label>
+        {{input value=comment.body id="body"}}
+      </div>
+      <button {{action 'updateComment' comment}}>Save</button>
+    </form>
+  </div>
+  {{else}}
+<button {{action 'updateCommentForm'}}>Update</button>
+{{/if}}
 
-{{update-comment comment=comment updateComment="updateComment"}}
+<!-- {{update-comment comment=comment updateComment=updateComment update='update'}} -->
 <button {{action 'delete' comment}}>Delete Comment</button>

@@ -12,7 +12,7 @@ export default Ember.Component.extend({
         author: this.get('author'),
         country: this.get('country'),
         summary: this.get('summary'),
-        image: this.get('image'),
+        image: this.get('image')
       };
       this.set('updateTravelForm', false);
       this.sendAction('updateTravel', travel, params);

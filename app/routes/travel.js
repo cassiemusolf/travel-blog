@@ -16,6 +16,7 @@ export default Ember.Route.extend({
       this.transitionTo('travel');
     },
     updateComment(comment, params) {
+      console.log("Hi");
       Object.keys(params).forEach(function(key) {
         if(params[key]!==undefined) {
           comment.set(key,params[key]);
@@ -43,6 +44,7 @@ export default Ember.Route.extend({
       this.transitionTo('index');
     },
     destroyComment(comment) {
+      console.log("Bye");
       comment.destroyRecord();
       this.transitionTo('travel');
     }
