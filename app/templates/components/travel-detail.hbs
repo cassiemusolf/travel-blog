@@ -8,6 +8,13 @@
 <hr>
 
 <img src={{travel.image}} alt="Travel image">
+
+<h2>Comments</h2>
+<ul>
+  {{#each travel.comments as |comment|}}
+    {{comment-tile comment=comment}}
+  {{/each}}
+</ul>
 </div>
 
 <div class="col-sm-1"></div>
