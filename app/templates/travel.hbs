@@ -1,16 +1,15 @@
 
+<div class="container">
+<div class="col-md-1"></div>
+  <div class="col-md-10">
 
-<div class="row">
+      {{travel-detail travel=model destroyTravel="destroyTravel"  destroyComment="destroyComment" updateComment="updateComment"}}
 
-  <h2>Read about {{travel.author}}'s experience in {{travel.country}} '</h2>
-</div>
+      {{update-travel travel=model updateTravel="updateTravel"}}
 
-<div class="row">
+      {{new-comment saveComment="saveComment" travel=model}}
 
-    {{travel-detail travel=model destroyTravel="destroyTravel"  destroyComment="destroyComment" updateComment="updateComment"}}
-
-    {{update-travel travel=model updateTravel="updateTravel"}}
-
-    {{new-comment saveComment="saveComment" travel=model}}
+  </div>
+  <div class="col-md-1"></div>
 
 </div>

@@ -1,4 +1,5 @@
 {{#if addNewTravel}}
+<div class="blog-form">
 <h1>New Blog Post</h1>
 <div>
    <form>
@@ -30,6 +31,7 @@
      <button {{action 'saveTravel'}}>Save</button>
    </form>
  </div>
+</div>
 {{else}}
-<button {{action 'travelFormShow'}}>Add a new blog</button>
+<button class="addBlog" {{action 'travelFormShow'}}>Add a New Blog</button>
 {{/if}}

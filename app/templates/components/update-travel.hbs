@@ -9,22 +9,22 @@
 
      <div class="form-group">
        <label for="author">Author</label>
-       {{input value=author id="author"}}
+       {{input value=travel.author id="author"}}
      </div>
 
      <div class="form-group">
        <label for="country">Country</label>
-       {{input value=country id="country"}}
+       {{input value=travel.country id="country"}}
      </div>
 
      <div class="form-group">
        <label for="summary">Summary of blog</label>
-       {{input value=summary id="summary"}}
+       {{input value=travel.summary id="summary"}}
      </div>
 
      <div class="form-group">
        <label for="image">Image URL</label>
-       {{input value=image id="image"}}
+       {{input value=travel.image id="image"}}
      </div>
 
      <button {{action 'updateTravel' travel}}>Save</button>

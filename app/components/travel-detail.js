@@ -15,7 +15,7 @@ export default Ember.Component.extend({
       };
       console.log(params);
       this.set('updateCommentForm', false);
-      debugger;
+
       this.sendAction('updateComment', comment, params);
     },
     destroyComment(comment) {

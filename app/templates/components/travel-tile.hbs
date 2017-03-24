@@ -1,18 +1,17 @@
-
-
  <div class="each-tile">
-   <h2 class="title">{{travel.title}}</h2> <br>
-   <h3 class="author">by {{travel.author}}</h3>
+     <h2 class="title">{{travel.title}}</h2>
+     <h3 class="author">by {{travel.author}}</h3>
+     <h3 class="country">Country: {{travel.country}}</h3>
 
-   <img class="image" src={{travel.image}} alt="travel image">
-   <h1 class="country">{{travel.country}}</h1>
-   <br>
-   <p class="summary">
-     {{travel.summary}}
-   </p>
+     <img class="image" src={{travel.image}} alt="travel image">
+     <p class="summary">
+       {{travel.summary}}
+     </p>
 
-   <p class="read-more"> {{#link-to 'travel' travel.id}}
-     Read More...
-     {{/link-to}}
-   </p>
- </div>
+     <p class="read-more"> {{#link-to 'travel' travel.id}}
+       Read More...
+       {{/link-to}}
+     </p>
+
+
+</div>

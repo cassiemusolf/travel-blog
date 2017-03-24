@@ -1,25 +1,25 @@
 {
   "travels": [
     {
-      "author": "Team Fathom",
+      "author": "Nomadic Matt",
       "title": "Rafting Adventure",
-      "country": "Fiji",
-      "image": "https://s3.amazonaws.com/fathom_media/cache/c7/a5/c7a5ece97078e394379c9648067e6ac5.jpg",
-      "summary": "The most amazing scenery and rapids!"
+      "country": "Costa Rica",
+      "image": "http://cdn-image.travelandleisure.com/sites/default/files/styles/1600x1000/public/1475681085/costa-rica-beach-SALE1016.jpg?itok=xlnlA7Vr",
+      "summary": "Costa Rica is one of my favorite countries in the world. I love the never-ending activities, gorgeous beaches, a plethora of wildlife, delicious food, and friendly people. The country may be firmly on the tourist trail and expensive by regional standards but that doesn’t make this country any less amazing. The beaches feel like paradise, there’s great surfing, diving, and plenty of places to get away from the hoards of retired Americans that live here. There is always a quiet spot to be found if you look. Moreover, the local food uses a variety of spices and flavors that excite your mouth. I really can’t say enough good things about this country. It’s a place I happily revisit often!"
     },
     {
-      "author": "Veruca Salt",
-      "title": "Salt Salt Salt",
-      "country": "Peru",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
-      "summary": "This is salty stuff"
+      "author": "Nomadic Matt",
+      "title": "South Afria Travel Guie",
+      "country": "South Africa",
+      "image": "https://static.pexels.com/photos/29049/pexels-photo.jpg",
+      "summary": "With safaris, mountains, wineries, an endless coastline, and cities like Cape Town, South Africa is a magical place where no traveler can go wrong! As a backpacker, this country is a great place to travel as it’s inexpensive (thanks to a very weak currency), there are a lot of work opportunities, and plenty of adventure activities to keep you busy. True, the country isn’t perfect with high levels of corruption and petty crime (be sure to watch your stuff!), but the country’s rich history, natural beauty, and international culture make it a hotspot with travelers from around the world. It’s a country I always wish I got to spend more time in. This guide to traveling South Africa can help you plan the perfect trip."
     },
     {
-      "author": "Precious V",
-      "title": "Gold Mining",
-      "country": "Iceland",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
-      "summary": "I am rich BEAAAAOONCAY!"
+      "author": "Cassie Musolf",
+      "title": "One Month in Vietnam",
+      "country": "Vietnam",
+      "image": "https://images.pexels.com/photos/33545/sunrise-phu-quoc-island-ocean.jpg?w=940&h=650&auto=compress&cs=tinysrgb",
+      "summary": "Vietnam is a country of diversity: Chaotic cities and sleepy rural villages. Mountains and beaches, palm trees and pines. While traveling in Vietnam, we trekked through rice terraces, hugged a 1,000-year-old tree, explored famous caves, ate everything we set our sights on, went zip-lining and canyoneering, drove a motorbike through jungles and misty mountain passes, were invited into a home in a rural village, learned how to cook some tasty Vietnamese dishes, and rang in the new year on our own private beach."
     }
   ],
   "comments": [

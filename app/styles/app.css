@@ -1,4 +1,12 @@
 body {
+  font-family: 'Lora', serif;
+}
+
+.jumbotron {
+  background-image: url("../assets/images/stock.jpg");
+  height: 500px;
+  margin-top: -30px;
+  width: 100%;
 }
 
 .jumbo-image {
@@ -7,38 +15,37 @@ body {
 }
 
 .welcome {
-  width: 30%;
+  width: 80%;
   height: auto;
-  background-color: teal;
-  text-align: center;
-  margin-left: 30%;
-  margin-right: auto;
-  margin-top: -70%;
+  background-color: white;
+  text-align: left;
+  border: black 1px solid;
   z-index: 1;
-  position: absolute;
+  margin-top: -10%;
+  margin-left: 26%;
 }
 
+
 .image {
-  width: 45%;
-  height: auto;
-  position: absolute;
-  margin-left: 46%;
-  margin-top: -6%;
+  max-width: 50%;
+  margin-left: 50%;
+  margin-top: -12.5%;
+
 }
 
 .tiles {
-  outline: 3px green solid;
-  margin-top: -60%;
+  /*outline: 3px green solid;*/
 }
 
 .each-tile {
-  outline: 3px red solid;
-  height: 380px;
-  background-color: lightgray;
+  height: 452px;
+  background-color: white;
+  box-shadow: 5px 5px 10px 10px grey;
+  margin-bottom: 30px;
 }
 
 :hover.each-tile{
-  background-color: teal;
+  background-color: #eaf7f6;
 }
 
 .title {
@@ -49,51 +56,83 @@ body {
 .author {
   font-size: 20px;
   font-style: italic;
-  margin-left: 20%;
-  position: absolute;
-  margin-top: 0px;
+  padding-left: 20px;
 }
 
 .country {
-  position: absolute;
+  padding-left: 10px;
+}
 
+.travel-img {
+  max-width: 60%;
 }
 
 .summary {
-  position: absolute;
-  margin-top: 17%;
-  margin-left: 10px;
+  float: left;
+  text-align: left;
+  position: relative;
+  max-width: 50%;
+  padding-left: 10px;
+  margin-top: -18%;
 }
 
 .read-more {
-  float: right;
-  margin-top: 31%;
-  margin-right: 10px;
   font-size: 20px;
+  margin-left: 85%;
+  margin-top: 40px;
 }
 
 .whale {
-  position: relative;
   z-index: -1;
   width: 100%;
   opacity: 0.;
 }
 
 .add-new {
-  position:fixed;
   right: 0;
-  top: 50%
 }
 
 .logo {
   height: 80px;
+  margin-top: -10px;
 }
 
 .navbar {
-  height: 100px;
+  height: 80px;
 }
 
 .pull-right {
   padding-left: 50px;
   color: white;
+  margin-top: 19px;
+}
+
+.container {
+  margin-bottom: 50px;
+}
+
+.addBlog {
+  margin: 30px 0 30px 30px;
+}
+
+.blog-form {
+  text-align: center;
+}
+
+.about-us {
+  border: black solid 1px;
+  height: 206px;
+  width: 710px;
+  margin-top: 10%;
+  text-align: left;
+  box-shadow: 5px 15px 15px grey;
+  padding: 20px;
+}
+
+.circle {
+  border-radius: 10%;
+  width: 40%;
+  float:right;
+  padding-right: 0px;
+  margin-top: -17%;
 }

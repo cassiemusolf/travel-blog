@@ -1,30 +1,28 @@
-<img class="jumbo-image" src="assets/images/stock.jpg" alt="greece" />
-
-  <img class="whale" src="assets/images/forest.jpg" alt="whale" />
-
-
-<div class="container welcome">
-  <h1>Welcome to our travel blog</h1>
-
-  <h2>Talk about your travels and experiences!</h2>
+<div class="jumbotron">
 
 </div>
+<!-- <img class="jumbo-image" src="assets/images/stock.jpg" alt="greece" /> -->
 
-<div class="container tiles">
-<div class="row">
-  <div class="col-sm-1"></div>
-  <div class="col-sm-9">
+  <!-- <img class="whale" src="assets/images/forest.jpg" alt="whale" /> -->
 
+
+<div class="container">
+<!-- <div class="welcome">
+  <h1>Welcome to my travel blog!</h1>
+
+  <h2>Feel free to share your experiences or thoughts!</h2>
+
+  <img class="round-pic" src="assets/images/girl.jpeg" alt="girl">
+
+</div> -->
+
+<div class="tiles">
     <ul>
       {{#each model.travel as |thisTravel|}}
       {{travel-tile travel=thisTravel}}
       {{/each}}
     </ul>
-  </div>
 
-</div>
-</div>
-<div class="add-new col-sm-2">
-  <h1>TEST TEST - </h1>
   {{new-travel saveTravel="saveTravel"}}
+</div>
 </div>

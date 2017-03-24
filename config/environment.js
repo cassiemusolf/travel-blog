@@ -18,11 +18,11 @@ module.exports = function(environment) {
     },
 
     firebase: {
-      apiKey: "AIzaSyBliJ3iyo5sbZ7G0IYSbob6MWc91gX0_OQ",
-      authDomain: "travel-blog-65a22.firebaseapp.com",
-      databaseURL: "https://travel-blog-65a22.firebaseio.com",
-      storageBucket: "travel-blog-65a22.appspot.com",
-      messagingSenderId: "137460830334"
+      apiKey: "AIzaSyCo63j-NQZbObexz4KUnAyHldTHjEM8xRE",
+      authDomain: "travel-blog-299b0.firebaseapp.com",
+      databaseURL: "https://travel-blog-299b0.firebaseio.com",
+      storageBucket: "travel-blog-299b0.appspot.com",
+      messagingSenderId: "672998193396"
     },
 
     APP: {
